@@ -20,9 +20,14 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/linevall/overlay/common \
     vendor/linevall/overlay/no-rro
 
+
 # Include LineVall LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/linevall/overlay/dictionaries
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/linevall/overlay/dictionaries
+
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
 
 # Extra tools
 PRODUCT_PACKAGES += \
