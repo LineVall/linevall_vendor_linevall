@@ -26,8 +26,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/linevall/overlay/dictionaries
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/linevall/overlay/dictionaries
 
 # Charger
+ifeq ($(USE_PIXEL_CHARGER),true)
 PRODUCT_PACKAGES += \
     product_charger_res_images
+endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
