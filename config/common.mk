@@ -5,6 +5,11 @@ PRODUCT_BRAND ?= LineVallOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+# Permissions for lineage sdk services
+PRODUCT_COPY_FILES += \
+    vendor/linevall/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
+    vendor/linevall/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
