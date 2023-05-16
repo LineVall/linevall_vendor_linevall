@@ -31,6 +31,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     aapt_version_code \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
+    gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     needs_camera_boottime \
     camera_needs_client_info_lib \
@@ -67,6 +68,7 @@ SOONG_CONFIG_lineageQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_lineageGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
@@ -80,6 +82,7 @@ SOONG_CONFIG_lineageGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAME
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED ?= 1
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED ?= 0
