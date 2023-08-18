@@ -11,6 +11,7 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 PRODUCT_PACKAGES += \
     Eleven \
     Etar \
+    GameSpace \
     Profiles \
     Recorder \
     Seedvault
