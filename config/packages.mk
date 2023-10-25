@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     messaging \
     NetworkStackOverlay \
     Stk \
+    SettingsIntelligenceGoogle \
     ThemePicker \
     ThemesStub
 

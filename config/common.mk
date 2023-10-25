@@ -12,6 +12,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
+    vendor/linevall/config/permissions/privapp-permissions-linevall-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-linevall-product.xml \
     vendor/linevall/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
     vendor/linevall/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/linevall/prebuilt/common/etc/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
