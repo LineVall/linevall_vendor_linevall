@@ -54,6 +54,9 @@ include vendor/linevall/config/aosp_audio.mk
 # Incude LineVall Branding
 include vendor/linevall/config/version.mk
 
+# Inherit SystemUI Clocks if they exist
+$(call inherit-product-if-exists, vendor/SystemUIClocks/product.mk)
+
 # Include Linevall Packages
 include vendor/linevall/config/packages.mk
 include vendor/prebuilts/prebuilts.mk
