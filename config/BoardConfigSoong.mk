@@ -31,6 +31,7 @@ SOONG_CONFIG_linevallGlobalVars += \
     aapt_version_code \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
+    camera_needs_client_info_lib \
     camera_override_format_from_reserved \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
@@ -101,6 +102,7 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
 SOONG_CONFIG_linevallGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
 SOONG_CONFIG_linevallGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_linevallGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
+SOONG_CONFIG_linevallGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_linevallGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_linevallGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
 SOONG_CONFIG_linevallGlobalVars_target_health_charging_control_charging_enabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED)
