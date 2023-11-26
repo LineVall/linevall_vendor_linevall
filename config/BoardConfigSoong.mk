@@ -56,6 +56,7 @@ SOONG_CONFIG_linevallGlobalVars += \
     uses_nothing_camera \
     uses_oplus_camera \
     uses_oppo_camera \
+    uses_miui_camera
 
 SOONG_CONFIG_NAMESPACES += linevallNvidiaVars
 SOONG_CONFIG_linevallNvidiaVars += \
@@ -86,6 +87,7 @@ SOONG_CONFIG_linevallGlobalVars_uses_legacy_fd_fbdev := $(TARGET_USES_LEGACY_FD_
 SOONG_CONFIG_linevallGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_linevallGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_linevallGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
+SOONG_CONFIG_linevallGlobalVars_uses_miui_camera := $(TARGET_USES_MIUI_CAMERA)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
