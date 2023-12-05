@@ -5,3 +5,8 @@ include hardware/qcom-caf/common/BoardConfigQcom.mk
 endif
 
 include vendor/linevall/config/BoardConfigSoong.mk
+
+# Namespace for fwk-detect
+TARGET_FWK_DETECT_PATH ?= hardware/qcom-caf/common
+PRODUCT_SOONG_NAMESPACES += \
+    $(TARGET_FWK_DETECT_PATH)/fwk-detect
