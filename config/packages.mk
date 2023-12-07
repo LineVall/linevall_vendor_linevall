@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     Aperture \
     DocumentsUI \
     DocumentsUIOverlay \
+    GameSpace \
     LatinIME \
     Launcher3QuickStep \
     messaging \
