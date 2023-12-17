@@ -41,6 +41,20 @@ PRODUCT_COPY_FILES += \
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
+
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+PRODUCT_PACKAGES += \
+    ParanoidSense
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.face.sense_service=true
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+endif
+
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
