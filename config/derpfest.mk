@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Panic \
     Prospect \
-    Ripple
+    Ripple \
+    SoundPicker
 
 # ColumbusService
 ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
