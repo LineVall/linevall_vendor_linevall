@@ -1,0 +1,6 @@
+export TARGET_USE_OPDOLBY=true
+export DERPFEST_BUILD_TYPE=Community
+export ALLOW_MISSING_DEPENDENCIES=true
+export USE_CHROMITE=true
+export DISABLE_STUB_VALIDATION=true
+export USE_VIPER=true

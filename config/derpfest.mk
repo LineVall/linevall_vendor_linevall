@@ -66,8 +66,10 @@ endif
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     DerpWalls \
-    FossifyGallery \
+    Etar \
+    ExactCalculator \
     GameSpace \
+    Glimpse \
     LMOFreeform \
     LMOFreeformSidebar \
     OmniStyle \
@@ -100,9 +102,9 @@ endif
 DONT_DEXPREOPT_PREBUILTS := true
 
 # GMS
-WITH_GMS := true
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
-$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+# WITH_GMS := true
+# $(call inherit-product-if-exists, vendor/google/gms/config.mk)
+# $(call inherit-product-if-exists, vendor/google/pixel/config.mk)
 
 
 # Pixel Framework
